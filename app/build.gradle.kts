@@ -71,6 +71,7 @@ dependencies {
 
     implementation("com.google.dagger:hilt-android:2.46")
     kapt("com.google.dagger:hilt-android-compiler:2.46")
+    implementation("androidx.compose.material:material-icons-extended:1.6.8")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

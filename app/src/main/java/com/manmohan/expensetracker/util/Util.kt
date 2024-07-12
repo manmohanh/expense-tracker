@@ -1,6 +1,7 @@
 package com.manmohan.expensetracker.util
 
 import androidx.compose.ui.graphics.Color
+import java.text.DecimalFormat
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Date
@@ -74,3 +75,9 @@ fun getColor(amount: Float, colors: List<Color>): Color {
         }
     }
 }
+
+fun formatAmount(amount: Float):String {
+    return AmountDecimalFormat.format(amount)
+}
+
+private val AmountDecimalFormat = DecimalFormat("#.###.##")
